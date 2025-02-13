@@ -1,0 +1,111 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/blocks/blocks-bundled.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+/**
+* This file imports all of the base frontend styles for each block
+* in order to create a final compiled stylesheet that contains all
+* non-shared block frontend CSS. This lets us enqueue all of the block
+* styles together when desired.
+*
+* Note: each block also compiles it's block styles into a block specific
+* stylesheet for the frontend. This allows us to have the option to instead
+* load block styles as separate stylesheets for each block. A use case would
+* be for a project where most of the blocks are disabled, or in the future
+* when we support HTTP/2 and decide to switch to multiple small stylesheets
+* instead of a large one. Future versions of WordPress are also adding the ability
+* to inline CSS as well as load core blocks as individual stylesheets when they
+* are used on the page.
+*/
+/**
+* This Tools partial should ONLY contain global non-printing
+* SCSS such as variables, mixins, etc. It is imported
+* into each block and ends up in the compiled stylesheets
+* multiple times so if any CSS prints it will be duplicated
+* many times.
+*/
+.wp-block--bu-block-example--editor-partials .wp-block--bu-block-example--editor-partials--title::before, .wp-block--bu-block-example--caterpillar .wp-block--bu-block-example--caterpillar--title::before, .wp-block-bu-block-example-dynamic-1 .wp-block-bu-block-example-dynamic-1--title::before {
+  color: unset;
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 900;
+  line-height: 1;
+  padding-bottom: 0.2em;
+  speak: none;
+  text-decoration: none;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-right: 0.5em;
+}
+
+/*!
+ * Font Awesome Free 5.15.1 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ */
+.wp-block--bu-block-example--editor-partials .wp-block--bu-block-example--editor-partials--title span, .wp-block--bu-block-example--caterpillar .wp-block--bu-block-example--caterpillar--title span, .wp-block-bu-block-example-dynamic-1 .wp-block-bu-block-example-dynamic-1--title span {
+  display: none;
+}
+.wp-block--bu-block-example--editor-partials .wp-block--bu-block-example--editor-partials--title::before, .wp-block--bu-block-example--caterpillar .wp-block--bu-block-example--caterpillar--title::before, .wp-block-bu-block-example-dynamic-1 .wp-block-bu-block-example-dynamic-1--title::before {
+  content: "\f067";
+}
+
+/**
+ * SCSS partial that contains all of the base (structural) styles for this block.
+ */
+.wp-block-bu-block-example-dynamic-1 {
+  background-color: #21759b;
+  color: #fff;
+  padding: 10px;
+}
+.wp-block-bu-block-example-dynamic-1 p {
+  background: #639;
+  border: 4px solid #fff;
+  color: #fa0;
+  border-width: var(--bu-block-starter-border-width);
+}
+.wp-block-bu-block-example-dynamic-1 .wp-block-bu-block-example-dynamic-1--title {
+  color: #800080;
+}
+
+/**
+ * SCSS partial that contains all of the base (structural) styles for this block.
+ */
+.wp-block--bu-block-example--caterpillar {
+  background-color: #21759b;
+  color: #fff;
+  padding: 10px;
+}
+.wp-block--bu-block-example--caterpillar p {
+  background: #639;
+  border: 4px solid #fff;
+  color: #fa0;
+  border-width: var(--theme-slug-border-width);
+}
+.wp-block--bu-block-example--caterpillar .wp-block--bu-block-example--caterpillar--title {
+  color: purple;
+}
+
+/**
+ * SCSS partial that contains all of the base (structural) styles for this block.
+ */
+.wp-block--bu-block-example--editor-partials {
+  background-color: #21759b;
+  color: #fff;
+  padding: 10px;
+}
+.wp-block--bu-block-example--editor-partials p {
+  background: #639;
+  border: 4px solid #fff;
+  color: #fa0;
+  border-width: var(--theme-slug-border-width);
+}
+.wp-block--bu-block-example--editor-partials .wp-block--bu-block-example--editor-partials--title {
+  color: purple;
+}
+
+/*# sourceMappingURL=blocks-bundled.css.map*/

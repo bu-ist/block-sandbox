@@ -1,0 +1,17 @@
+/**
+* This Tools partial should ONLY contain global non-printing
+* SCSS such as variables, mixins, etc. It is imported
+* into each block and ends up in the compiled stylesheets
+* multiple times so if any CSS prints it will be duplicated
+* many times.
+*/
+
+// Loads variables from the main stylesheet for this plugin or theme.
+@import '../../scss/abstracts/config/variables';
+@import 'burf-tools/tools-webpack';
+
+@mixin bu_block_starter_fancy_mixin() {
+	background: #639;
+	border: 4px solid #fff;
+	color: #fa0;
+}

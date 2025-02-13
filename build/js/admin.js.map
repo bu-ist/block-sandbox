@@ -1,0 +1,1 @@
+{"version":3,"file":"js/admin.js","mappings":";;;;AAAA;AACA;AACA;AACA;AACA;AACAA,OAAO,CAACC,GAAG,CACV,iEACD,CAAC,C","sources":["webpack://theme-slug/./src/js/admin.js"],"sourcesContent":["/**\n * Admin only scripts\n *\n * @package\n */\nconsole.log(\n\t'theme-slug js/admin.js has loaded and has to buy some new hats.'\n);\n"],"names":["console","log"],"sourceRoot":""}

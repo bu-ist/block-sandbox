@@ -1,0 +1,19 @@
+// =================================================================
+// Sequential Cards Styles
+// =================================================================
+
+body.has-sticky-video-story {
+	.body-wrapper {
+		//your custom styles here
+	}
+
+	.wp-component-progressbar-sticky{
+		&.on-screen {
+			//your custom styles here
+		}
+	}
+}
+
+.wp-block-video-story {
+	//your custom styles here
+}

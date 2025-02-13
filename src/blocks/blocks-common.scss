@@ -1,0 +1,14 @@
+/**
+* This file is always enqueued and contains any shared
+* css such as custom properties, and styles for small
+* reusable HTML elements. For example a `.myplugin-term-label`
+* class that styles a label or button shared by multiple
+* blocks. This prevents the need to duplicate styles entirely
+* for blocks that have some shared markup and elements.
+**/
+
+// Import our tools for variables and mixins.
+@import 'includes/tools';
+
+// Import all SCSS partials from the common folder.
+@import 'blocks-common/package';

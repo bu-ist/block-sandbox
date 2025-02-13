@@ -1,0 +1,14 @@
+// =================================================================
+// Admin only styles
+// =================================================================
+
+// Note, any style in this sheet will be added to the backend admin dashbaord and can 
+// potentially affect any UI elements, thus should be used sparingly. Block and block editor 
+// stles should be added elsewhere; either on the blocks own style sheet or 
+// editor-styles.scss.
+
+@import "plugins/bu-landing-page/admin";
+
+// body {
+// 	border: solid 20px #00f; // text styles for veryfying style sheet inclusion
+// }

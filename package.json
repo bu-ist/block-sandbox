@@ -1,0 +1,90 @@
+{
+  "name": "theme-slug",
+  "version": "0.0.0",
+  "description": "A block-editor enabled starter template for child themes of Responsive Framework 3.",
+  "author": {
+    "name": "Boston University",
+    "url": "https://www.bu.edu/marcom/"
+  },
+  "contributors": [
+    "Your Name <you@bu.edu>"
+  ],
+  "license": "GPL-3.0-or-later",
+  "keywords": [],
+  "homepage": "https://github.com/bu-ist/responsive-child-starter-3x-block-editor",
+  "repository": "https://github.com/bu-ist/responsive-child-starter-3x-block-editor",
+  "bugs": {
+    "url": "https://github.com/bu-ist/responsive-child-starter-3x-block-editor/issues"
+  },
+  "private": true,
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "browserify-shim": {
+    "jquery": "global:jQuery"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
+  "devDependencies": {
+    "@bostonuniversity/burf-base": "file:.yalc/@bostonuniversity/burf-base",
+    "@bostonuniversity/burf-customizations": "file:.yalc/@bostonuniversity/burf-customizations",
+    "@bostonuniversity/burf-theme": "file:.yalc/@bostonuniversity/burf-theme",
+    "@bostonuniversity/burf-tools": "file:.yalc/@bostonuniversity/burf-tools",
+    "@linthtml/linthtml": "^0.9.5",
+    "@wordpress/scripts": "^27.1.0",
+    "@wordpress/stylelint-config": "^21.33.0",
+    "browserify": "^17.0.0",
+    "browserify-shim": "^3.8.16",
+    "html-linter": "^1.1.1",
+    "node-wp-i18n": "^1.2.7",
+    "nodemon": "^3.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "sass-embedded": "^1.77.1",
+    "webpack-merge": "^5.10.0",
+    "webpack-remove-empty-scripts": "^1.0.4",
+    "wp-version-upgrade": "^1.0.3",
+    "yalc": "^1.0.0-pre.53"
+  },
+  "scripts": {
+    "__SETUP__": "=========================================================================",
+    "postinstall": "composer install",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "__DEVELOPMENT__": "===================================================================",
+    "start": "npm-run-all --parallel watch:scripts watch:theme",
+    "watch:scripts": "wp-scripts start",
+    "watch:theme": "nodemon --watch src/theme-json dev/theme-json/compile.mjs",
+		"__BLOCKS__": "=========================================================================",
+		"new-id-block": "cd src/blocks && npx @wordpress/create-block@latest --template @bostonuniversity/create-block-templates --no-plugin",
+		"new-wp-block": "cd src/blocks && npx @wordpress/create-block@latest --no-plugin",
+    "__CLEANUP__": "=======================================================================",
+    "format": "wp-scripts format",
+    "lint": "npm-run-all lint:css lint:html lint:js lint:md lint:php lint:pkg",
+    "lint:css": "wp-scripts lint-style",
+    "lint:html": "linthtml '**!(node_modules|build|vendor)/*.php'",
+    "lint:js": "wp-scripts lint-js",
+    "lint:js:fix": "wp-scripts lint-js --fix",
+    "lint:md": "wp-scripts lint-md-docs",
+    "lint:php": "dev/phpcs/lint-modified.sh",
+    "lint:php:all": "dev/phpcs/lint-all.sh",
+    "lint:pkg": "wp-scripts lint-pkg-json",
+    "__TESTING__": "=======================================================================",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js",
+    "__BUILD__": "=========================================================================",
+    "build": "npm-run-all build:theme build:scripts build:i18n build:version",
+    "build:clean": "rimraf languages/*",
+    "build:wpi18n": "wpi18n addtextdomain",
+    "build:wpmakepot": "wpi18n makepot --domain-path languages",
+    "build:i18n": "npm-run-all build:clean build:wpi18n build:wpmakepot",
+    "build:scripts": "wp-scripts build",
+    "build:theme": "node --trace-warnings dev/theme-json/compile.mjs",
+    "build:version": "node dev/version.js"
+  }
+}
