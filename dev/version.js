@@ -13,7 +13,7 @@ const minFile = 'build/css/theme.css';
 const cssHeader =
 	`@charset "UTF-8";
 /*
-Theme Name: Theme Name
+Theme Name: Block Sandbox
 Theme URI: ` +
 	repository +
 	`
