@@ -1,1 +1,0 @@
-{"version":3,"file":"css/classic-editor.css","mappings":";;;AAAA;;CAAA,C","sources":["webpack://theme-slug/./src/scss/classic-editor.scss"],"sourcesContent":["/**\n* Block editor only styles\n*/\n// body {\n// \tborder: solid 20px #f00 !important;\n// }\n"],"names":[],"sourceRoot":""}

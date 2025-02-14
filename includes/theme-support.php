@@ -2,7 +2,7 @@
 /**
  * Theme Support settings.
  *
- * @package theme-slug
+ * @package block-sandbox
  * @link https://github.com/WordPress/gutenberg/blob/wp/5.8/docs/how-to-guides/themes/theme-support.md
  * @todo move this to gutenberg framework when available
  * @todo make this a settings panel for admins?
@@ -100,7 +100,7 @@ add_action(
 		$wp_admin_bar->add_node(
 			[
 				'id'    => 'wpdocs',
-				'title' => __( 'Resources', 'theme-slug' ),
+				'title' => __( 'Resources', 'block-sandbox' ),
 				'href'  => 'https://wpdocs.bu.edu/',
 				'meta'  => [
 					'class' => 'wpdocs',
@@ -113,12 +113,12 @@ add_action(
 			[
 				[
 					'id'    => 'main-docs',
-					'title' => __( 'Primary Documentation', 'theme-slug' ),
+					'title' => __( 'Primary Documentation', 'block-sandbox' ),
 					'href'  => 'https://wpdocs.bu.edu/',
 				],
 				[
 					'id'    => 'client-docs',
-					'title' => __( 'Client Documentation', 'theme-slug' ),
+					'title' => __( 'Client Documentation', 'block-sandbox' ),
 					'href'  => 'https://wpdocs.bu.edu/client',
 				],
 			]

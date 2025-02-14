@@ -42,7 +42,7 @@ while ( have_posts() ) :
 	<?php
 			wp_link_pages(
 				array(
-					'before' => sprintf( '<div class="page-link">%s', esc_html__( 'Pages:', 'theme-slug' ) ),
+					'before' => sprintf( '<div class="page-link">%s', esc_html__( 'Pages:', 'block-sandbox' ) ),
 					'after'  => '</div>',
 				)
 			);
@@ -50,7 +50,7 @@ while ( have_posts() ) :
 
 	<?php responsive_comments(); ?>
 
-	<?php edit_post_link( __( 'Edit Page', 'theme-slug' ), '<span class="edit-link">', '</span><span class="post-edit-hint"></span>' ); ?>
+	<?php edit_post_link( __( 'Edit Page', 'block-sandbox' ), '<span class="edit-link">', '</span><span class="post-edit-hint"></span>' ); ?>
 
 	<?php
 		/**

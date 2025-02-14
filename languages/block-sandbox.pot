@@ -1,22 +1,48 @@
-# <!=Copyright (C) 2024 Boston University Interactive Design
+# <!=Copyright (C) 2025 Boston University Interactive Design
 # This file is distributed under the same license as the Theme Name package.=!>
 msgid ""
 msgstr ""
 "Project-Id-Version: Theme Name 0.0.0\n"
-"Report-Msgid-Bugs-To: "
-"https://wordpress.org/support/theme/responsive-child-starter-3x-block-"
-"editor\n"
-"POT-Creation-Date: 2024-12-17 20:48:21+00:00\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/block-sandbox\n"
+"POT-Creation-Date: 2025-02-14 18:02:13+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: node-wp-i18n 1.2.7\n"
 
-#: includes/blocks/class-blockpatterns.php:68
+#: build/blocks/demo/render.php:14 src/blocks/demo/render.php:14
+msgid "DEMO – hello from repo-slug-demo block!"
+msgstr ""
+
+#: includes/blocks/block-styles.php:24
+msgid "PHP Style"
+msgstr ""
+
+#: includes/blocks/block-styles.php:31
+msgid "PHP Style 2"
+msgstr ""
+
+#: includes/blocks/block-styles.php:38
+msgid "PHP Style 3"
+msgstr ""
+
+#: includes/blocks/class-blockpatterns.php:72
 msgid "BU: Theme Starter Custom Patterns"
+msgstr ""
+
+#: includes/theme-support.php:103
+msgid "Resources"
+msgstr ""
+
+#: includes/theme-support.php:116
+msgid "Primary Documentation"
+msgstr ""
+
+#: includes/theme-support.php:121
+msgid "Client Documentation"
 msgstr ""
 
 #: page-with-sidebar.php:45 page.php:44

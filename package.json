@@ -1,7 +1,7 @@
 {
-  "name": "theme-slug",
-  "version": "0.0.0",
-  "description": "A block-editor enabled starter template for child themes of Responsive Framework 3.",
+  "name": "block-sandbox",
+  "version": "12340.0.4325-gamma.991",
+  "description": "A demo site for all your block crap.",
   "author": {
     "name": "Boston University",
     "url": "https://www.bu.edu/marcom/"
@@ -11,10 +11,10 @@
   ],
   "license": "GPL-3.0-or-later",
   "keywords": [],
-  "homepage": "https://github.com/bu-ist/responsive-child-starter-3x-block-editor",
-  "repository": "https://github.com/bu-ist/responsive-child-starter-3x-block-editor",
+  "homepage": "https://github.com/bu-ist/block-sandbox",
+  "repository": "https://github.com/bu-ist/block-sandbox",
   "bugs": {
-    "url": "https://github.com/bu-ist/responsive-child-starter-3x-block-editor/issues"
+    "url": "https://github.com/bu-ist/block-sandbox/issues"
   },
   "private": true,
   "browserslist": [
@@ -31,10 +31,10 @@
     ]
   },
   "devDependencies": {
-    "@bostonuniversity/burf-base": "file:.yalc/@bostonuniversity/burf-base",
-    "@bostonuniversity/burf-customizations": "file:.yalc/@bostonuniversity/burf-customizations",
-    "@bostonuniversity/burf-theme": "file:.yalc/@bostonuniversity/burf-theme",
-    "@bostonuniversity/burf-tools": "file:.yalc/@bostonuniversity/burf-tools",
+    "@bostonuniversity/burf-base": "^5.0.3",
+    "@bostonuniversity/burf-customizations": "^5.0.3",
+    "@bostonuniversity/burf-theme": "^5.0.3",
+    "@bostonuniversity/burf-tools": "^5.0.3",
     "@linthtml/linthtml": "^0.9.5",
     "@wordpress/scripts": "^27.1.0",
     "@wordpress/stylelint-config": "^21.33.0",

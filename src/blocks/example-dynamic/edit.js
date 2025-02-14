@@ -47,14 +47,14 @@ export default function Edit( { attributes, setAttributes } ) {
 			<div className="wp-block-bu-block-example-dynamic--container">
 				<RichText
 					className="wp-block-bu-block-example-dynamic--title"
-					placeholder={ __( 'Callout Title', 'theme-slug' ) }
+					placeholder={ __( 'Callout Title', 'block-sandbox' ) }
 					tagName="h2"
 					onChange={ onChangeTitle }
 					value={ title }
 					allowedFormats={ [] }
 				/>
 				<RichText
-					placeholder={ __( 'Excerpt', 'theme-slug' ) }
+					placeholder={ __( 'Excerpt', 'block-sandbox' ) }
 					tagName="p"
 					classname="wp-block-bu-block-example-dynamic--excerpt"
 					onChange={ onChangeExcerpt }
