@@ -1,0 +1,74 @@
+# <!=Copyright (C) 2025 Boston University Interactive Design
+# This file is distributed under the same license as the Theme Name package.=!>
+msgid ""
+msgstr ""
+"Project-Id-Version: Theme Name 12340.0.4325-gamma.991\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/block-sandbox\n"
+"POT-Creation-Date: 2025-02-14 18:08:55+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2025-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: node-wp-i18n 1.2.7\n"
+
+#: build/blocks/demo/render.php:14 src/blocks/demo/render.php:14
+msgid "DEMO – hello from repo-slug-demo block!"
+msgstr ""
+
+#: includes/blocks/block-styles.php:24
+msgid "PHP Style"
+msgstr ""
+
+#: includes/blocks/block-styles.php:31
+msgid "PHP Style 2"
+msgstr ""
+
+#: includes/blocks/block-styles.php:38
+msgid "PHP Style 3"
+msgstr ""
+
+#: includes/blocks/class-blockpatterns.php:72
+msgid "BU: Theme Starter Custom Patterns"
+msgstr ""
+
+#: includes/theme-support.php:103
+msgid "Resources"
+msgstr ""
+
+#: includes/theme-support.php:116
+msgid "Primary Documentation"
+msgstr ""
+
+#: includes/theme-support.php:121
+msgid "Client Documentation"
+msgstr ""
+
+#: page-with-sidebar.php:45 page.php:44
+msgid "Pages:"
+msgstr ""
+
+#: page-with-sidebar.php:53 page.php:52
+msgid "Edit Page"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Theme Name"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://github.com/bu-ist/block-sandbox"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A demo site for all your block crap."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Boston University Interactive Design"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Page with Sidebar"
+msgstr ""

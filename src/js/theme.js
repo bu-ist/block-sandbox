@@ -13,5 +13,5 @@ import { toggle } from '@bostonuniversity/burf-theme/js-dev/dist/toggle';
 toggle();
 
 console.log(
-	'theme-slug js/theme.js has loaded and cannot wait to play the bongos.'
+	'block-sandbox js/theme.js has loaded and cannot wait to play the bongos.'
 );

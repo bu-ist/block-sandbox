@@ -4,7 +4,7 @@
  *
  * This was just quickly copied from BU Stats so the assets in this prototype could be enqueued for now.
  *
- * @package theme-slug
+ * @package block-sandbox
  */
 
 namespace BU\theme_slug\Blocks;

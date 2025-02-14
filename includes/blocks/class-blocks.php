@@ -2,7 +2,7 @@
 /**
  * Class to manage registration of blocks and assets within the editor.
  *
- * @package theme-slug
+ * @package block-sandbox
  */
 
 namespace BU\theme_slug\Blocks;

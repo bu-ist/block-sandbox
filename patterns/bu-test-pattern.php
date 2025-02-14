@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: BU: Theme Test Pattern
- * Slug: theme-slug/bu-test-pattern-theme
- * Categories: theme-slug-pattern-category
+ * Slug: block-sandbox/bu-test-pattern-theme
+ * Categories: block-sandbox-pattern-category
  * Inserter: no
  */
 

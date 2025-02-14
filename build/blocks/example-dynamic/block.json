@@ -1,17 +1,17 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "theme-slug/example-dynamic",
+  "name": "block-sandbox/example-dynamic",
   "version": "0.1.0",
   "title": "BU Theme Starter Block: Example - Dynamic",
-  "category": "theme-slug-block-category",
+  "category": "block-sandbox-block-category",
   "icon": "smiley",
   "description": "Example block using a dynamic template",
   "example": {},
   "supports": {
     "html": false
   },
-  "textdomain": "theme-slug",
+  "textdomain": "block-sandbox",
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./style-index.css",

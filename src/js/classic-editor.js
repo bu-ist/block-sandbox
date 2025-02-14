@@ -5,5 +5,5 @@
  */
 
 console.log(
-	'theme-slug js/classic-editor.js has loaded and is very very tired.'
+	'block-sandbox js/classic-editor.js has loaded and is very very tired.'
 );
