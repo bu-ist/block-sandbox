@@ -19,7 +19,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _modules_inspector_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/inspector.mjs */ "./src/blocks/github-embed/modules/inspector.mjs");
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/blocks/github-embed/editor.scss");
 
 /**
  * Retrieves the translation of text.
@@ -38,14 +37,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /**
  * Import editor partial code.
- */
-
-
-/**
- * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
- * Those files can contain any CSS code that gets applied to the editor.
- *
- * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
 
 
@@ -134,6 +125,9 @@ __webpack_require__.r(__webpack_exports__);
     },
     language: {
       type: 'string'
+    },
+    prismTheme: {
+      type: 'string'
     }
   },
   /**
@@ -144,18 +138,6 @@ __webpack_require__.r(__webpack_exports__);
     attributes
   }) => null
 });
-
-/***/ }),
-
-/***/ "./src/blocks/github-embed/editor.scss":
-/*!*********************************************!*\
-  !*** ./src/blocks/github-embed/editor.scss ***!
-  \*********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
 
 /***/ }),
 
@@ -279,22 +261,28 @@ const EditorPartialsInspectorControls = ({
   setAttributes
 }) => {
   const {
-    language
+    language,
+    prismTheme
   } = attributes;
   function setLanguage(val) {
     setAttributes({
       language: val
     });
   }
+  function setTheme(val) {
+    setAttributes({
+      prismTheme: val
+    });
+  }
   return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InspectorControls, null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Language'),
+    title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('PrismJS'),
     className: "bu-block-block-sandbox-github-embed-panel"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
     label: "Language",
     value: language,
     options: [{
       value: '',
-      label: 'Select a color, dawg',
+      label: 'como se dice',
       disabled: true
     }, {
       label: 'css',
@@ -316,6 +304,39 @@ const EditorPartialsInspectorControls = ({
       value: 'json'
     }],
     onChange: setLanguage
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.SelectControl, {
+    label: "Theme",
+    value: prismTheme,
+    options: [{
+      value: '',
+      label: 'テーマ',
+      disabled: true
+    }, {
+      label: 'coy',
+      value: 'coy'
+    }, {
+      label: 'dark',
+      value: 'dark'
+    }, {
+      label: 'funky',
+      value: 'funky'
+    }, {
+      label: 'okaidia',
+      value: 'okaidia'
+    }, {
+      label: 'solarizedlight',
+      value: 'solarizedlight'
+    }, {
+      label: 'tomorrow',
+      value: 'tomorrow'
+    }, {
+      label: 'twilight',
+      value: 'twilight'
+    }, {
+      label: 'default',
+      value: 'default'
+    }],
+    onChange: setTheme
   })));
 };
 
@@ -327,7 +348,7 @@ const EditorPartialsInspectorControls = ({
   \********************************************/
 /***/ (function(module) {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"block-sandbox/github-embed","version":"0.0.0","title":"BU Demo Block: github-embed","category":"embed","icon":"code","description":"github-embed","textdomain":"block-sandbox","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"block-sandbox/github-embed","version":"0.0.0","title":"BU Demo Block: github-embed","category":"embed","icon":"code","description":"github-embed","textdomain":"block-sandbox","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","render":"file:./render.php","viewScript":"file:./view.js"}');
 
 /***/ })
 

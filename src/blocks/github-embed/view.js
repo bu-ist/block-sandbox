@@ -19,7 +19,24 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
+// const Prism = require('prismjs');
 
-console.log( 'I am isTheme!' );
+import Prism from 'prismjs'
+
+// import 'prismjs/themes/prism-okaidia.css'
+// import 'prismjs/prism.js'
+
+// LANGAGES
+import 'prismjs/components/prism-json.js'
+import 'prismjs/components/prism-markdown.js'
+import 'prismjs/components/prism-scss.js'
+// import 'prismjs/components/prism-sass.js'
+import 'prismjs/components/prism-php.js'
+
+import 'prismjs/plugins/line-numbers/prism-line-numbers.js'
+
+// import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
+
+console.log( 'githubin`' );
 
 

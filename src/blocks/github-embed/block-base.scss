@@ -2,8 +2,11 @@
  * SCSS partial that contains all of the base (structural) styles for this block.
  */
 
-.wp-block-block-sandbox-github-embed {
-	background-color: #21759b;
-	color: #fff;
-	padding: 10px;
+ @import 'prismjs/themes/prism.css';
+ @import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+
+ pre.line-numbers {
+	font-size: .75rem !important;
+	white-space: pre-line !important;
 }
+.token.comment{ margin-left: 0; }

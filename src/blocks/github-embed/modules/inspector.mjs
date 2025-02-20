@@ -32,32 +32,53 @@ export const EditorPartialsInspectorControls = ( {
 } ) => {
 	const {
 		language,
+		prismTheme,
 	} = attributes;
 
 	function setLanguage( val ) {
 		setAttributes( { language: val } );
 	}
 
+	function setTheme( val ) {
+		setAttributes( { prismTheme: val } );
+	}
+
 	return (
 		<InspectorControls>
 			<PanelBody
-				title={ __( 'Language' ) }
+				title={ __( 'PrismJS' ) }
 				className="bu-block-block-sandbox-github-embed-panel"
 			>
-				<SelectControl
-					label="Language"
-					value={ language }
-					options={ [
-						{ value: '', label: 'Select a color, dawg', disabled: true },
-						{ label: 'css', value: 'css' },
-						{ label: 'scss', value: 'scss' },
-						{ label: 'php', value: 'php' },
-						{ label: 'js', value: 'js' },
-						{ label: 'md', value: 'md' },
-						{ label: 'json', value: 'json' },
-					] }
-					onChange={ setLanguage }
-				/>
+			<SelectControl
+				label="Language"
+				value={ language }
+				options={ [
+					{ value: '', label: 'como se dice', disabled: true },
+					{ label: 'css', value: 'css' },
+					{ label: 'scss', value: 'scss' },
+					{ label: 'php', value: 'php' },
+					{ label: 'js', value: 'js' },
+					{ label: 'md', value: 'md' },
+					{ label: 'json', value: 'json' },
+				] }
+				onChange={ setLanguage }
+			/>
+			<SelectControl
+				label="Theme"
+				value={ prismTheme }
+				options={ [
+					{ value: '', label: 'テーマ', disabled: true },
+					{ label: 'coy', value: 'coy' },
+					{ label: 'dark', value: 'dark' },
+					{ label: 'funky', value: 'funky' },
+					{ label: 'okaidia', value: 'okaidia' },
+					{ label: 'solarizedlight', value: 'solarizedlight' },
+					{ label: 'tomorrow', value: 'tomorrow' },
+					{ label: 'twilight', value: 'twilight' },
+					{ label: 'default', value: 'default' },
+				] }
+				onChange={ setTheme }
+			/>
 			</PanelBody>
 		</InspectorControls>
 	);

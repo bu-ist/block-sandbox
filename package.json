@@ -45,6 +45,7 @@
     "node-wp-i18n": "^1.2.7",
     "nodemon": "^3.0.2",
     "npm-run-all": "^4.1.5",
+    "prismjs": "^1.29.0",
     "rimraf": "^5.0.5",
     "sass-embedded": "^1.77.1",
     "webpack-merge": "^5.10.0",

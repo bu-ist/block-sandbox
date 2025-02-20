@@ -33,6 +33,9 @@ registerBlockType( metadata.name, {
 		language: {
 			type: 'string',
 		},
+		prismTheme: {
+			type: 'string',
+		},
 	},
 	/**
 	 * @see ./edit.js
