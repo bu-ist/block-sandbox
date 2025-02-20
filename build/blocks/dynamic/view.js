@@ -1,0 +1,1 @@
+console.log("Hello World! (from block-sandbox dynamic view.js)");
