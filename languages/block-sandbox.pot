@@ -14,7 +14,7 @@ msgstr ""
 "X-Generator: node-wp-i18n 1.2.7\n"
 
 #: build/blocks/demo/render.php:14 src/blocks/demo/render.php:14
-msgid "DEMO – hello from repo-slug-demo block!"
+msgid "DEMO – hello from block-sandbox-demo block!"
 msgstr ""
 
 #: includes/blocks/block-styles.php:24

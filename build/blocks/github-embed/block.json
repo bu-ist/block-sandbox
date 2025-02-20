@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "block-sandbox/github-embed",
+  "version": "0.0.0",
+  "title": "BU Demo Block: github-embed",
+  "category": "embed",
+  "icon": "code",
+  "description": "github-embed",
+  "textdomain": "block-sandbox",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}
