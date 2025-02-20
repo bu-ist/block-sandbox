@@ -12,7 +12,7 @@ import { registerBlockCollection } from '@wordpress/blocks';
  * @link https://github.com/godaddy-wordpress/coblocks/blob/e196c83d628e1139799ebf9ef94540578f430141/src/utils/helper.js
  */
 registerBlockCollection( 'block-sandbox', {
-	title: 'BU: Theme Starter Blocks Collection (JS)',
+	title: 'BU: block-sandbox Collection (JS)',
 } );
 
 /**

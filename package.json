@@ -31,6 +31,7 @@
     ]
   },
   "devDependencies": {
+    "@bostonuniversity/block-components": "^0.1.1",
     "@bostonuniversity/burf-base": "^5.0.3",
     "@bostonuniversity/burf-customizations": "^5.0.3",
     "@bostonuniversity/burf-theme": "^5.0.3",
@@ -60,9 +61,9 @@
     "start": "npm-run-all --parallel watch:scripts watch:theme",
     "watch:scripts": "wp-scripts start",
     "watch:theme": "nodemon --watch src/theme-json dev/theme-json/compile.mjs",
-		"__BLOCKS__": "=========================================================================",
-		"new-id-block": "cd src/blocks && npx @wordpress/create-block@latest --template @bostonuniversity/create-block-templates --no-plugin",
-		"new-wp-block": "cd src/blocks && npx @wordpress/create-block@latest --no-plugin",
+    "__BLOCKS__": "=========================================================================",
+    "new-id-block": "cd src/blocks && npx @wordpress/create-block@latest --template @bostonuniversity/create-block-templates --no-plugin",
+    "new-wp-block": "cd src/blocks && npx @wordpress/create-block@latest --no-plugin",
     "__CLEANUP__": "=======================================================================",
     "format": "wp-scripts format",
     "lint": "npm-run-all lint:css lint:html lint:js lint:md lint:php lint:pkg",

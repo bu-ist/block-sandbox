@@ -1,1 +1,0 @@
-console.log("Hello World! (from block-sandbox example-caterpillar view.js)");
