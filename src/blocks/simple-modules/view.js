@@ -20,4 +20,6 @@
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-metadata/#view-script
  */
 
-console.log( 'Hello World! (from block-sandbox example-editor-partials view.js)' );
+console.log(
+	'Hello World! (from block-sandbox example-editor-partials view.js)'
+);

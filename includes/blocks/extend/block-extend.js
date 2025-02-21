@@ -18,12 +18,16 @@
  * my new crap...
  */
 
-
-
 import { __ } from '@wordpress/i18n';
 import { addFilter } from '@wordpress/hooks';
 import { InspectorControls } from '@wordpress/block-editor';
-import { ExternalLink, PanelBody, PanelRow, SelectControl, ToggleControl } from '@wordpress/components';
+import {
+	ExternalLink,
+	PanelBody,
+	PanelRow,
+	SelectControl,
+	ToggleControl,
+} from '@wordpress/components';
 
 /**
  * The help text for the accessibility toggle.
@@ -35,20 +39,16 @@ const helpText = (
 			'block-sandbox'
 		) }
 		<ExternalLink
-			href={
-				'https://www.w3.org/WAI/tutorials/images/decorative/'
-			}
+			href={ 'https://www.w3.org/WAI/tutorials/images/decorative/' }
 		>
-			{ __(
-				'Learn more.',
-				'block-sandbox'
-			) }
+			{ __( 'Learn more.', 'block-sandbox' ) }
 		</ExternalLink>
 	</>
 );
 
 /**
  * Render the accessibility toggle in the Image block Settings Sidebar.
+ * @param BlockEdit
  */
 function addImageInspectorControls( BlockEdit ) {
 	return ( props ) => {
@@ -66,12 +66,7 @@ function addImageInspectorControls( BlockEdit ) {
 			<>
 				<BlockEdit { ...props } />
 				<InspectorControls>
-					<PanelBody
-						title={ __(
-							'Accessibility',
-							'block-sandbox'
-						) }
-					>
+					<PanelBody title={ __( 'Accessibility', 'block-sandbox' ) }>
 						<SelectControl
 							label="Color"
 							value={ codeLang }
@@ -80,26 +75,26 @@ function addImageInspectorControls( BlockEdit ) {
 								{ label: 'Green', value: 'green' },
 								{ label: 'Blue', value: 'blue' },
 							] }
-							onChange={ (newValue) => {
+							onChange={ ( newValue ) => {
 								setAttributes( {
-									codeLang: newValue
+									codeLang: newValue,
 								} );
 							} }
 						/>
-							<ToggleControl
-								label={ __(
-									'Image is decorative',
-									'block-sandbox'
-								) }
-								checked={ isDecorative }
-								onChange={ (newValue) => {
-									setAttributes( {
-										isDecorative: newValue,
-										alt: ! newValue ? '' : alt,
-									} );
-								} }
-								help={ helpText }
-							/>
+						<ToggleControl
+							label={ __(
+								'Image is decorative',
+								'block-sandbox'
+							) }
+							checked={ isDecorative }
+							onChange={ ( newValue ) => {
+								setAttributes( {
+									isDecorative: newValue,
+									alt: ! newValue ? '' : alt,
+								} );
+							} }
+							help={ helpText }
+						/>
 					</PanelBody>
 				</InspectorControls>
 			</>
@@ -117,9 +112,9 @@ addFilter(
 /**
  * Adds the role attribute to the root element in decorative Image blocks.
  *
- * @param {Object} props       The current `save` element’s props to be modified and returned.
- * @param {Object} blockType   The block type definition object.
- * @param {Object} attributes  The block's attributes.
+ * @param {Object} props      The current `save` element’s props to be modified and returned.
+ * @param {Object} blockType  The block type definition object.
+ * @param {Object} attributes The block's attributes.
  * @return {Object}            The modified properties with the `role` attribute added, or the original properties if conditions are not met.
  */
 function addAccessibilityRoleToImageBlocks( props, blockType, attributes ) {

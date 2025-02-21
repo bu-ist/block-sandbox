@@ -8,18 +8,16 @@
  */
 
 const stylesToAddRemove = {
-	'core/table': ['stripes', 'regular'],
-	'core/pullquote': ['solid-color', 'default'], // removes from dd but not picker
+	'core/table': [ 'stripes', 'regular' ],
+	'core/pullquote': [ 'solid-color', 'default' ], // removes from dd but not picker
 };
 
 /**
  * Unregister existing styles.
  */
 wp.domReady( function () {
-
 	Object.entries( stylesToAddRemove ).forEach( ( [ block, styles ] ) => {
 		// console.log(block + " , " + styles);
 		wp.blocks.unregisterBlockStyle( block, styles );
 	} );
-
 } );

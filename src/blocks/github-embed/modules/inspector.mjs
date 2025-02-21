@@ -14,6 +14,7 @@ import { InspectorControls } from '@wordpress/block-editor';
 // Import WP assets.
 import {
 	PanelBody,
+	TextControl, // https://developer.wordpress.org/block-editor/reference-guides/components/text-control/
 	SelectControl, // https://developer.wordpress.org/block-editor/reference-guides/components/select-control/
 } from '@wordpress/components';
 
@@ -33,6 +34,7 @@ export const EditorPartialsInspectorControls = ( {
 	const {
 		language,
 		prismTheme,
+		lines,
 	} = attributes;
 
 	function setLanguage( val ) {
@@ -41,6 +43,10 @@ export const EditorPartialsInspectorControls = ( {
 
 	function setTheme( val ) {
 		setAttributes( { prismTheme: val } );
+	}
+
+	function setLines( val ) {
+		setAttributes( { lines: val } );
 	}
 
 	return (
@@ -53,17 +59,18 @@ export const EditorPartialsInspectorControls = ( {
 				label="Language"
 				value={ language }
 				options={ [
-					{ value: '', label: 'como se dice', disabled: true },
+					{ value: '', label: 'none' },
 					{ label: 'css', value: 'css' },
 					{ label: 'scss', value: 'scss' },
 					{ label: 'php', value: 'php' },
 					{ label: 'js', value: 'js' },
 					{ label: 'md', value: 'md' },
 					{ label: 'json', value: 'json' },
+					{ label: 'html', value: 'html' },
 				] }
 				onChange={ setLanguage }
 			/>
-			<SelectControl
+			{/* <SelectControl
 				label="Theme"
 				value={ prismTheme }
 				options={ [
@@ -78,6 +85,12 @@ export const EditorPartialsInspectorControls = ( {
 					{ label: 'default', value: 'default' },
 				] }
 				onChange={ setTheme }
+			/> */}
+			<TextControl
+				label="Highlight Lines"
+				help="https://prismjs.com/plugins/line-highlight/"
+				value={ lines }
+				onChange={ setLines }
 			/>
 			</PanelBody>
 		</InspectorControls>

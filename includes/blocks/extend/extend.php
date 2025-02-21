@@ -20,21 +20,21 @@ namespace BU\plugin_slug\Blocks;
  */
 function tim_1( $args, $block_type ) {
 
-    // Only add the attribute to Image blocks.
-    if ( $block_type === 'core/code' ) {
+	// Only add the attribute to Image blocks.
+	if ( $block_type === 'core/code' ) {
 		// print_r($args);
-        if ( ! isset( $args['attributes'] ) ) {
-            $args['attributes'] = array();
-        }
+		if ( ! isset( $args['attributes'] ) ) {
+			$args['attributes'] = array();
+		}
 
-        $args['attributes']['whatever'] = array(
-            'type'    => 'string',
-            'default' => 'fart',
-        );
+		$args['attributes']['whatever'] = array(
+			'type'    => 'string',
+			'default' => 'fart',
+		);
 		// print_r($args);
-    }
+	}
 
-    return $args;
+	return $args;
 }
 add_filter( 'register_block_type_args', __NAMESPACE__ . '\\tim_1', 10, 2 );
 
@@ -52,17 +52,16 @@ function tim_2( $block_content, $block ) {
 		// print_r($block);
 
 		// why can't i access instance properties?
-    // Only apply the modifications if the image is decorative.
-    // if ( $is_decorative ) {
-        // WP_HTML_Tag_Processor not available until 6.2
-		$block_content = str_replace('<code>', '<code class="poo">', $block_content);
-		$block_content = "my mod---".$block_content;
+	// Only apply the modifications if the image is decorative.
+	// if ( $is_decorative ) {
+		// WP_HTML_Tag_Processor not available until 6.2
+		$block_content = str_replace( '<code>', '<code class="poo">', $block_content );
+		$block_content = 'my mod---' . $block_content;
 		return $block_content;
-    // }
+	// }
 
-    // return $block_content;
-    // https://highlightjs.org/ -- no line numbers
-    // https://prismjs.com/ -- new top choice
-
+	// return $block_content;
+	// https://highlightjs.org/ -- no line numbers
+	// https://prismjs.com/ -- new top choice
 }
 add_filter( 'render_block_core/code', __NAMESPACE__ . '\\tim_2', 10, 2 );

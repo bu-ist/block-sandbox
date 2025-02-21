@@ -2,11 +2,18 @@
  * SCSS partial that contains all of the base (structural) styles for this block.
  */
 
- @import 'prismjs/themes/prism.css';
- @import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+@import 'github-embed/prism/prism.css';
 
  pre.line-numbers {
 	font-size: .75rem !important;
 	white-space: pre-line !important;
 }
+
 .token.comment{ margin-left: 0; }
+
+.wp-block-block-sandbox-github-embed .code{
+    background: none;
+    border: none;
+    margin: auto;
+    padding: inherit;
+}

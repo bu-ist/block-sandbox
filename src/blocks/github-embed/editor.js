@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-import {registerBlockType} from '@wordpress/blocks';
+import { registerBlockType } from '@wordpress/blocks';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -12,7 +12,7 @@ import {registerBlockType} from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.scss';
+// import './editor.scss';
 
 /**
  * Internal dependencies
@@ -34,6 +34,9 @@ registerBlockType( metadata.name, {
 			type: 'string',
 		},
 		prismTheme: {
+			type: 'string',
+		},
+		lines: {
 			type: 'string',
 		},
 	},

@@ -109,7 +109,7 @@ class BlockEnqueues {
 			wp_enqueue_script(
 				RESPONSIVE_CHILD_THEME_DOMAIN . '-block-editor',
 				RESPONSIVE_CHILD_THEME_URL . '/build/js/block-editor.js',
-				array_merge( $asset_file['dependencies'], ['wp-edit-post'] ),
+				array_merge( $asset_file['dependencies'], [ 'wp-edit-post' ] ),
 				// $asset_file['dependencies'],
 				$asset_file['version'],
 				array(

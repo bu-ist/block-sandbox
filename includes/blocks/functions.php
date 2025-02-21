@@ -55,16 +55,16 @@ require_once 'block-styles.php';
  *
  * The best way to use this function is to wrap it in an
  * `add_action` hook:
- * 	add_action(
- *		'wp_loaded',
- *		function() {
- *			unregister_patterns( array(
- *				'plugin-slug/bu-test-pattern-plugin',
- *				'block-sandbox/bu-test-pattern-theme',
- *			)
- *		);
- *		}
- *	);
+ *  add_action(
+ *      'wp_loaded',
+ *      function() {
+ *          unregister_patterns( array(
+ *              'plugin-slug/bu-test-pattern-plugin',
+ *              'block-sandbox/bu-test-pattern-theme',
+ *          )
+ *      );
+ *      }
+ *  );
 .*
 .* The above example uses `wp_loaded`, which is the very last
 .* action in the WordPress setup.
@@ -75,7 +75,7 @@ function unregister_patterns( $patterns ) {
 	if ( ! is_array( $patterns ) || empty( $patterns ) ) {
 		return;
 	}
-	foreach( $patterns as $pattern ) {
+	foreach ( $patterns as $pattern ) {
 		unregister_block_pattern( $pattern );
 	}
 }

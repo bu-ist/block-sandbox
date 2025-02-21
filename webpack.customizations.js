@@ -65,7 +65,7 @@ const statsConfig = {
 	colors: true, // Use colors for better readability.
 	modules: false, // Hide module details.
 	chunks: false, // Hide chunk details.
-	chunkGroups : false,
+	chunkGroups: false,
 	assets: false, // Hide "assets by path" details.
 	entrypoints: true, // Hide the entry points with the corresponding bundles.
 	logging: 'none',
