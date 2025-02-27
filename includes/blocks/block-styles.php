@@ -7,7 +7,7 @@
  *
  * @link https://developer.bu.edu/gutenberg/handbook/block-styles/
  *
- * @package block-sandbox
+ * @package labs-theme-blocks
  */
 
 namespace BU\plugin_slug\Blocks;
@@ -18,25 +18,25 @@ namespace BU\plugin_slug\Blocks;
  * @link https://developer.wordpress.org/reference/functions/register_block_style/
  */
 register_block_style(
-	'core/quote',
-	array(
-		'name'  => 'quote-php-style',
-		'label' => __( 'PHP Style', 'block-sandbox' ),
-	)
+    'core/quote',
+    array(
+        'name'         => 'quote-php-style',
+        'label'        => __( 'PHP Style', 'labs-theme-blocks' ),
+    )
 );
 register_block_style(
-	'core/quote',
-	array(
-		'name'  => 'quote-php-style-2',
-		'label' => __( 'PHP Style 2', 'block-sandbox' ),
-	)
+    'core/quote',
+    array(
+        'name'         => 'quote-php-style-2',
+        'label'        => __( 'PHP Style 2', 'labs-theme-blocks' ),
+    )
 );
 register_block_style(
-	'core/quote',
-	array(
-		'name'  => 'quote-php-style-3',
-		'label' => __( 'PHP Style 3', 'block-sandbox' ),
-	)
+    'core/quote',
+    array(
+        'name'         => 'quote-php-style-3',
+        'label'        => __( 'PHP Style 3', 'labs-theme-blocks' ),
+    )
 );
 
 /**

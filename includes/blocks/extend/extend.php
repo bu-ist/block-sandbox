@@ -4,7 +4,7 @@
  *
  * @link https://github.com/bu-ist/id-gutenberg/issues/293
  *
- * @package block-sandbox
+ * @package labs-theme-blocks
  */
 
 namespace BU\plugin_slug\Blocks;

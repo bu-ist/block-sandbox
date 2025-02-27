@@ -1,10 +1,10 @@
 # <!=Copyright (C) 2025 Boston University Interactive Design
-# This file is distributed under the same license as the Block Sandbox package.=!>
+# This file is distributed under the same license as the LABS: theme-blocks package.=!>
 msgid ""
 msgstr ""
-"Project-Id-Version: Block Sandbox 12340.0.4325-gamma.991\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/block-sandbox\n"
-"POT-Creation-Date: 2025-02-21 17:47:18+00:00\n"
+"Project-Id-Version: LABS: theme-blocks 12340.0.4325-gamma.991\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/labs-theme-blocks\n"
+"POT-Creation-Date: 2025-02-27 17:18:40+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,6 +12,10 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "X-Generator: node-wp-i18n 1.2.7\n"
+
+#: build/blocks/demo/render.php:14 src/blocks/demo/render.php:14
+msgid "DEMO – hello from repo-slug-demo block!"
+msgstr ""
 
 #: includes/blocks/block-styles.php:24
 msgid "PHP Style"
@@ -49,12 +53,16 @@ msgstr ""
 msgid "Edit Page"
 msgstr ""
 
+#: src-later/blocks/code/render.php:14
+msgid "DEMO – hello from labs-theme-blocks-code block!"
+msgstr ""
+
 #. Theme Name of the plugin/theme
-msgid "Block Sandbox"
+msgid "LABS: theme-blocks"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://github.com/bu-ist/block-sandbox"
+msgid "https://github.com/bu-ist/labs-theme-blocks"
 msgstr ""
 
 #. Description of the plugin/theme

@@ -2,7 +2,7 @@
 /**
  * Enqueue scripts and styles.
  *
- * @package block-sandbox
+ * @package labs-theme-blocks
  */
 
 namespace BU\theme_slug;

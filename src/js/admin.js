@@ -4,5 +4,5 @@
  * @package
  */
 console.log(
-	'block-sandbox js/admin.js has loaded and has to buy some new hats.'
+	'labs-theme-blocks js/admin.js has loaded and has to buy some new hats.'
 );
