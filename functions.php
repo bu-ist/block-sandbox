@@ -4,7 +4,7 @@
  *
  * @link     https://github.com/bu-ist/responsive-framework/wiki/Starting-a-new-Child-Theme
  *
- * @package block-sandbox
+ * @package labs-theme-blocks
  */
 
 namespace BU\theme_slug;
@@ -14,7 +14,7 @@ namespace BU\theme_slug;
 /**
  * Current theme's domain.
  */
-define( 'RESPONSIVE_CHILD_THEME_DOMAIN', 'block-sandbox' );
+define( 'RESPONSIVE_CHILD_THEME_DOMAIN', 'labs-theme-blocks' );
 
 /**
  * Current theme's server path. No trailing /
@@ -102,7 +102,7 @@ require_once 'includes/theme-support.php';
 // Example code for additional items:
 	//$wpdocs_menu[] = [
 		//  'id'    => '',
-		//  'title' => __( '', 'block-sandbox' ),
+		//  'title' => __( '', 'labs-theme-blocks' ),
 		//  'href'  => '',
 		//];
 add_filter(

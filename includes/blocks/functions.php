@@ -2,7 +2,7 @@
 /**
  * Block functions
  *
- * @package block-sandbox
+ * @package labs-theme-blocks
  */
 
 namespace BU\theme_slug\Blocks;
@@ -60,7 +60,7 @@ require_once 'block-styles.php';
  *		function() {
  *			unregister_patterns( array(
  *				'plugin-slug/bu-test-pattern-plugin',
- *				'block-sandbox/bu-test-pattern-theme',
+ *				'labs-theme-blocks/bu-test-pattern-theme',
  *			)
  *		);
  *		}

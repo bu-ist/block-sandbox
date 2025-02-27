@@ -1,1 +1,1 @@
-console.log("block-sandbox js/classic-editor.js has loaded and is very very tired.");
+console.log("labs-theme-blocks js/classic-editor.js has loaded and is very very tired.");

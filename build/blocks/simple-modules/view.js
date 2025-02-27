@@ -1,1 +1,1 @@
-console.log("Hello World! (from block-sandbox example-editor-partials view.js)");
+console.log("Hello World! (from labs-theme-blocks example-editor-partials view.js)");

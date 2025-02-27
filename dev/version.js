@@ -5,6 +5,7 @@ const version = packageInfo.version;
 const description = packageInfo.description;
 const repository = packageInfo.repository;
 const name = packageInfo.name;
+const title = packageInfo.title;
 const homepage = packageInfo.homepage;
 
 const themeFile = 'style.css';
@@ -13,7 +14,9 @@ const minFile = 'build/css/theme.css';
 const cssHeader =
 	`@charset "UTF-8";
 /*
-Theme Name: Block Sandbox
+Theme Name: ` +
+	title +
+	`
 Theme URI: ` +
 	repository +
 	`

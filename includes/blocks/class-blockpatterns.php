@@ -2,7 +2,7 @@
 /**
  * Block Pattern registration
  *
- * @package block-sandbox
+ * @package labs-theme-blocks
  */
 
 namespace BU\theme_slug\Blocks;
@@ -69,7 +69,7 @@ class BlockPatterns {
 		 */
 		register_block_pattern_category(
 			RESPONSIVE_CHILD_THEME_DOMAIN . '-pattern-category',
-			array( 'label' => __( 'BU: Theme Starter Custom Patterns', 'block-sandbox' ) )
+			array( 'label' => __( 'BU: Theme Starter Custom Patterns', 'labs-theme-blocks' ) )
 		);
 	}
 

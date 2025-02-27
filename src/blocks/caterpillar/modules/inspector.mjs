@@ -78,12 +78,12 @@ export const CaterpillarInspectorControls = ( {
 		<InspectorControls>
 			<PanelBody
 				title={ __( 'Caterpillar Configuration' ) }
-				className="block-sandbox-caterpillar--panel"
+				className="labs-theme-blocks-caterpillar--panel"
 			>
 				<TextControl
 					label="Name"
 					help="Who are you?"
-					className="block-sandbox-caterpillar--name"
+					className="labs-theme-blocks-caterpillar--name"
 					value={ caterpillarName }
 					onChange={ setCaterpillarName }
 				/>

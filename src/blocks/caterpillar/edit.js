@@ -67,10 +67,10 @@ export default function Edit( props ) {
 		<>
 			<CaterpillarInspectorControls { ...props } />
 			<div { ...useBlockProps() }>
-				<div className="wp-block--block-sandbox-caterpillar--container">
+				<div className="wp-block--labs-theme-blocks-caterpillar--container">
 					<RichText
-						className="wp-block--block-sandbox-caterpillar--title"
-						placeholder={ __( 'Callout Title', 'block-sandbox' ) }
+						className="wp-block--labs-theme-blocks-caterpillar--title"
+						placeholder={ __( 'Callout Title', 'labs-theme-blocks' ) }
 						tagName="h2"
 						onChange={ onChangeTitle }
 						value={ title }
@@ -85,7 +85,7 @@ export default function Edit( props ) {
 					</strong>
 					<div
 						className={
-							'wp-block--block-sandbox-caterpillar--color-' +
+							'wp-block--labs-theme-blocks-caterpillar--color-' +
 							attributes.caterpillarColor
 						}
 					>
@@ -96,9 +96,9 @@ export default function Edit( props ) {
 						) }
 					</div>
 					<RichText
-						placeholder={ __( 'Excerpt', 'block-sandbox' ) }
+						placeholder={ __( 'Excerpt', 'labs-theme-blocks' ) }
 						tagName="p"
-						classname="wp-block--block-sandbox-caterpillar--excerpt"
+						classname="wp-block--labs-theme-blocks-caterpillar--excerpt"
 						onChange={ onChangeExcerpt }
 						value={ excerpt }
 						allowedFormats={ [

@@ -1,10 +1,10 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "block-sandbox/caterpillar",
+	"name": "labs-theme-blocks/caterpillar",
 	"version": "0.1.0",
 	"title": "BU Demo Block: Caterpillar",
-	"category": "block-sandbox",
+	"category": "labs-theme-blocks",
 	"icon": "ellipsis",
 	"description": "Example block using the insect order Lepidoptera.",
 	"example": {},
@@ -16,7 +16,7 @@
 			"type": "string"
 		}
 	},
-	"textdomain": "block-sandbox",
+	"textdomain": "labs-theme-blocks",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

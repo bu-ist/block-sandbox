@@ -10,13 +10,13 @@
 <hr>
 <pre>...dynamic...</pre>
 <div <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
-	<div class="wp-block-block-sandbox-dynamic--container">
+	<div class="wp-block-labs-theme-blocks-dynamic--container">
 		<?php if ( ! empty( $attributes['title'] ) ) : ?>
-		<h2 class="wp-block-block-sandbox-dynamic--title"><?php echo esc_html( $attributes['title'] ); ?></h2>
+		<h2 class="wp-block-labs-theme-blocks-dynamic--title"><?php echo esc_html( $attributes['title'] ); ?></h2>
 		<?php endif; ?>
 
 		<?php if ( ! empty( $attributes['excerpt'] ) ) : ?>
-		<p class="wp-block-block-sandbox-dynamic--excerpt"><?php echo wp_kses_post( $attributes['excerpt'] ); ?></p>
+		<p class="wp-block-labs-theme-blocks-dynamic--excerpt"><?php echo wp_kses_post( $attributes['excerpt'] ); ?></p>
 		<?php endif; ?>
 	</div>
 </div>

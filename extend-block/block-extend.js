@@ -32,7 +32,7 @@ const helpText = (
 	<>
 		{ __(
 			"Decorative images don't add information to the content of a page. Enabling removes alternative text and sets the image's role to presentation. ",
-			'block-sandbox'
+			'labs-theme-blocks'
 		) }
 		<ExternalLink
 			href={
@@ -41,7 +41,7 @@ const helpText = (
 		>
 			{ __(
 				'Learn more.',
-				'block-sandbox'
+				'labs-theme-blocks'
 			) }
 		</ExternalLink>
 	</>
@@ -69,7 +69,7 @@ function addImageInspectorControls( BlockEdit ) {
 					<PanelBody
 						title={ __(
 							'Accessibility',
-							'block-sandbox'
+							'labs-theme-blocks'
 						) }
 					>
 						<SelectControl
@@ -89,7 +89,7 @@ function addImageInspectorControls( BlockEdit ) {
 							<ToggleControl
 								label={ __(
 									'Image is decorative',
-									'block-sandbox'
+									'labs-theme-blocks'
 								) }
 								checked={ isDecorative }
 								onChange={ (newValue) => {
@@ -110,7 +110,7 @@ function addImageInspectorControls( BlockEdit ) {
 // select not saving...
 addFilter(
 	'editor.BlockEdit',
-	'block-sandbox/add-image-inspector-controls',
+	'labs-theme-blocks/add-image-inspector-controls',
 	addImageInspectorControls
 );
 
@@ -146,7 +146,7 @@ function addAccessibilityRoleToImageBlocks( props, blockType, attributes ) {
 // https://developer.wordpress.org/block-editor/reference-guides/filters/block-filters/#blocks-getsavecontent-extraprops
 addFilter(
 	'blocks.getSaveContent.extraProps',
-	'block-sandbox/add-accessibility-role-to-image-blocks',
+	'labs-theme-blocks/add-accessibility-role-to-image-blocks',
 	addAccessibilityRoleToImageBlocks
 );
 // ^ THIS breaks the block in the editor beacuse the save and post body are in clongi

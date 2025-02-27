@@ -2,7 +2,7 @@
  * SCSS partial that contains all of the base (structural) styles for this block.
  */
 
-.wp-block-block-sandbox-dynamic-1 {
+.wp-block-labs-theme-blocks-dynamic-1 {
 	background-color: #21759b;
 	color: #fff;
 	padding: 10px;
@@ -14,7 +14,7 @@
 		border-width: var( --bu-block-starter-border-width );
 	}
 
-	.wp-block-block-sandbox-dynamic-1--title {
+	.wp-block-labs-theme-blocks-dynamic-1--title {
 		color: #800080;
 
 		@extend %icon-plus;

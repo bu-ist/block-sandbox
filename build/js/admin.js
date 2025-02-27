@@ -1,1 +1,1 @@
-console.log("block-sandbox js/admin.js has loaded and has to buy some new hats.");
+console.log("labs-theme-blocks js/admin.js has loaded and has to buy some new hats.");

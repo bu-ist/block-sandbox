@@ -51,17 +51,17 @@ export default function Edit( props ) {
 			<div { ...useBlockProps() }>
 				<div style={ { backgroundColor: attributes.color } }>
 					<RichText
-						className="wp-block--block-sandbox-simple-modules--title"
-						placeholder={ __( 'Callout Title', 'block-sandbox' ) }
+						className="wp-block--labs-theme-blocks-simple-modules--title"
+						placeholder={ __( 'Callout Title', 'labs-theme-blocks' ) }
 						tagName="h2"
 						onChange={ onChangeTitle }
 						value={ title }
 						allowedFormats={ [] }
 					/>
 					<RichText
-						placeholder={ __( 'Excerpt', 'block-sandbox' ) }
+						placeholder={ __( 'Excerpt', 'labs-theme-blocks' ) }
 						tagName="p"
-						classname="wp-block--block-sandbox-simple-modules--excerpt"
+						classname="wp-block--labs-theme-blocks-simple-modules--excerpt"
 						onChange={ onChangeExcerpt }
 						value={ excerpt }
 						allowedFormats={ [

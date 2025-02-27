@@ -1,1 +1,1 @@
-console.log("Hello World! (from block-sandbox caterpillar view.js)");
+console.log("Hello World! (from labs-theme-blocks caterpillar view.js)");

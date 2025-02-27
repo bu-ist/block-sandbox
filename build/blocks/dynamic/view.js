@@ -1,1 +1,1 @@
-console.log("Hello World! (from block-sandbox dynamic view.js)");
+console.log("Hello World! (from labs-theme-blocks dynamic view.js)");

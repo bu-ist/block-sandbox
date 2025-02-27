@@ -40,7 +40,7 @@ export const EditorPartialsInspectorControls = ( {
 		<InspectorControls>
 			<PanelBody
 				title={ __( 'Block Options' ) }
-				className="block-sandbox-simple-modules--panel"
+				className="labs-theme-blocks-simple-modules--panel"
 			>
 				<SelectControl
 					label="Color"

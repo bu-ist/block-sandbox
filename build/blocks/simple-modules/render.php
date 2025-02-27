@@ -10,14 +10,14 @@
 <hr>
 <pre>...partials...</pre>
 <div <?php echo wp_kses_data( get_block_wrapper_attributes() ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
-	<div class="wp-block--block-sandbox-simple-modules--container" style="background-color:<?php echo esc_attr( $attributes['color'] ); ?>">
+	<div class="wp-block--labs-theme-blocks-simple-modules--container" style="background-color:<?php echo esc_attr( $attributes['color'] ); ?>">
 
 		<?php if ( ! empty( $attributes['title'] ) ) : ?>
-		<h2 class="wp-block--block-sandbox-simple-modules--title"><?php echo esc_html( $attributes['title'] ); ?></h2>
+		<h2 class="wp-block--labs-theme-blocks-simple-modules--title"><?php echo esc_html( $attributes['title'] ); ?></h2>
 		<?php endif; ?>
 
 		<?php if ( ! empty( $attributes['excerpt'] ) ) : ?>
-		<p class="wp-block--block-sandbox-simple-modules--excerpt"><?php echo wp_kses_post( $attributes['excerpt'] ); ?></p>
+		<p class="wp-block--labs-theme-blocks-simple-modules--excerpt"><?php echo wp_kses_post( $attributes['excerpt'] ); ?></p>
 		<?php endif; ?>
 
 	</div>

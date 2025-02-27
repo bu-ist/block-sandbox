@@ -11,5 +11,5 @@
  */
 ?>
 <p <?php echo wp_kses_data( get_block_wrapper_attributes() ); ?>>
-	<?php esc_html_e( 'DEMO – hello from repo-slug-demo block!', 'block-sandbox' ); ?>
+	<?php esc_html_e( 'DEMO – hello from repo-slug-demo block!', 'labs-theme-blocks' ); ?>
 </p>

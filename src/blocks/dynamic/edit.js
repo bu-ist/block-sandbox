@@ -44,19 +44,19 @@ export default function Edit( { attributes, setAttributes } ) {
 
 	return (
 		<div { ...useBlockProps() }>
-			<div className="wp-block-block-sandbox-dynamic--container">
+			<div className="wp-block-labs-theme-blocks-dynamic--container">
 				<RichText
-					className="wp-block-block-sandbox-dynamic--title"
-					placeholder={ __( 'Callout Title', 'block-sandbox' ) }
+					className="wp-block-labs-theme-blocks-dynamic--title"
+					placeholder={ __( 'Callout Title', 'labs-theme-blocks' ) }
 					tagName="h2"
 					onChange={ onChangeTitle }
 					value={ title }
 					allowedFormats={ [] }
 				/>
 				<RichText
-					placeholder={ __( 'Excerpt', 'block-sandbox' ) }
+					placeholder={ __( 'Excerpt', 'labs-theme-blocks' ) }
 					tagName="p"
-					classname="wp-block-block-sandbox-dynamic--excerpt"
+					classname="wp-block-labs-theme-blocks-dynamic--excerpt"
 					onChange={ onChangeExcerpt }
 					value={ excerpt }
 					allowedFormats={ [
