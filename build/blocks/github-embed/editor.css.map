@@ -1,1 +1,0 @@
-{"version":3,"file":"blocks/github-embed/editor.css","mappings":";;;AAAA;EACC;AACD,C","sources":["webpack://block-sandbox/./src/blocks/github-embed/modules/inspector.scss"],"sourcesContent":[".bu-block-block-sandbox-github-embed-panel {\n\tbackground-color: yellow;\n}\n"],"names":[],"sourceRoot":""}

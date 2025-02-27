@@ -14,10 +14,7 @@
 * are used on the page.
 */
 
-@import 'includes/tools';
+@import '_includes/tools';
 
 // Import Block Styles
-@import 'dynamic/block-base';
-@import 'simple-modules/block-base';
-@import 'caterpillar/block-base';
-@import 'github-embed/block-base';
+// @import 'block-slug/block-base';

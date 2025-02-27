@@ -21,4 +21,4 @@ registerBlockCollection( 'block-sandbox', {
 import '../blocks/block-styles';
 
 // Block variations.
-import '../blocks/variations';
+// import '../blocks/variations';

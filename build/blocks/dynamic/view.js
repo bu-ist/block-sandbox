@@ -1,1 +1,0 @@
-console.log("Hello World! (from labs-theme-blocks dynamic view.js)");

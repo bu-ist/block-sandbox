@@ -8,7 +8,7 @@
 
 // Loads variables from the main stylesheet for this plugin or theme.
 @import '../../scss/abstracts/config/variables';
-@import 'burf-tools/tools-webpack';
+@import '@bostonuniversity/burf-tools/tools-webpack';
 
 @mixin bu_block_starter_fancy_mixin() {
 	background: #639;
