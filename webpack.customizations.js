@@ -11,7 +11,6 @@
  * New paths can be added to this array in this file and will be added as paths that Dart Sass checks to find SASS partials for @import instances.
  */
 const customIncludePaths = [
-	'node_modules',
 	'./node_modules/normalize-scss/sass',
 	'./node_modules/mathsass/dist/',
 	'./node_modules/@bostonuniversity',
@@ -66,7 +65,7 @@ const statsConfig = {
 	colors: true, // Use colors for better readability.
 	modules: false, // Hide module details.
 	chunks: false, // Hide chunk details.
-	chunkGroups: false,
+	chunkGroups : false,
 	assets: false, // Hide "assets by path" details.
 	entrypoints: true, // Hide the entry points with the corresponding bundles.
 	logging: 'none',
