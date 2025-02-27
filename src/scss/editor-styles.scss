@@ -1,7 +1,7 @@
-// The following Block Editor styles are added to the block editor thru add_theme_support() with 
-// the the add_editor_style() function. In doing so they are prepended with the .editor-styles-wrapper 
-// class so as to only affect contents within the block editor and create pairity between the frontend 
-// and the editor. And so any partials imported to theme.scss which affect the content area and blocks 
+// The following Block Editor styles are added to the block editor thru add_theme_support() with
+// the the add_editor_style() function. In doing so they are prepended with the .editor-styles-wrapper
+// class so as to only affect contents within the block editor and create pairity between the frontend
+// and the editor. And so any partials imported to theme.scss which affect the content area and blocks
 // there within should also be added to this sheet in a similar order.
 
 
@@ -9,7 +9,7 @@
 // Global and Base Styles
 // =================================================================
 
-@import "burf-base/accessibility";
+@import "@bostonuniversity/burf-base/accessibility";
 @import "abstracts/config/breakpoints";
 @import "abstracts/mixins/mixins";
 @import "foundational/fonts";

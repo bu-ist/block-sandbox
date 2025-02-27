@@ -8,7 +8,7 @@
 **/
 
 // Import our tools for variables and mixins.
-@import 'includes/tools';
+@import '_includes/tools';
 
 // Import all SCSS partials from the common folder.
-@import 'blocks-common/package';
+@import '_includes/blocks-common/package';

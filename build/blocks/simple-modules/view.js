@@ -1,1 +1,0 @@
-console.log("Hello World! (from labs-theme-blocks example-editor-partials view.js)");

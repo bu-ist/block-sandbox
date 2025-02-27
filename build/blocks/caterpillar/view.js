@@ -1,1 +1,0 @@
-console.log("Hello World! (from labs-theme-blocks caterpillar view.js)");
